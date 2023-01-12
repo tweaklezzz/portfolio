@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Turum';
+}
+
+html{
+    font-size: 16px;
+    background-color: #000;
+}
+
+@font-face {
+    font-family: 'Turum';
+    src: url(./Turum.woff) format('woff'),
+         url(./Turum.woff2) format('woff2'),
+         url(./Turum.ttf) format('truetype');
+}
+  
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-image: url("img/nightcity.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header__content{
+    background: linear-gradient(180deg, rgba(255, 245, 0, 0.3), #000);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.header__content img{
+  height: 200px;
+  /* width: 200px; */
+  
+}
+
+.button{
+    padding: .8rem 6rem;
+    color: #000;
+    background-color: #fff500;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 7px 5px rgba(0, 0, 0, .5);
+    font-size: 2rem;
+}
+
+section{
+    margin: 6rem 0;
+}
+
+section h1{
+    font-size: 2rem;
+    color: #fff500;
+    text-align: center;
+    margin: 6rem 0;
+}
+
+#catalog{
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.item{
+    background-color: #ff3300;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all .8s;
+    font-size: 2rem;
+}
+
+.item img{
+    max-width: 200px;
+}
+
+.item:hover{
+    box-shadow: 0 0 100px rgba(255, 245, 0, 0.9);
+    transform: translateY(-10px);
+}
+
+.item__price{
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    background-color: #ffc700;
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.item .description{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.item:hover .description{
+    opacity: 1;
+}
+
+.social-networks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-card{
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    background-color: #fff500;
+    color: #000;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    border: 5px solid #fff500;
+}
+
+.social-card i{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+.social-card:hover{
+    color: #fff500;
+    background-color: #000;
+}
+
+
+#map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section p{
+    margin: 6rem 0;
+    color: #fff500;
+    text-align: center;
+}
+
+.copyright{
+    font-family: sans-serif;
+}
